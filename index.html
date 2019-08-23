@@ -11,7 +11,22 @@
 </head>
 
 <body>
-
+  <div class="controller-fluid">
+    <div class="row text-center">
+      <div class="col-12">
+        <h1>Pizza Party</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <form onsubmit="app.controllers.pizzaController.createPizza(event)">
+        <div class="form-group">
+          <label for="name">Pizza Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter pizza name" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+      </form>
+    </div>
+  </div>
 
   <script src="app/main.js" type="module"></script>
 </body>

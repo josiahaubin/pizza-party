@@ -6,6 +6,6 @@ let _pizzaService = new PizzaService()
 
 export default class PizzaController {
   constructor() {
-    console.log("pc")
+    //console.log("pc")
   }
 }
