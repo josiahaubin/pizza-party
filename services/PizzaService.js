@@ -21,6 +21,10 @@ export default class PizzaService {
     _state.pizzas[index].toppings.splice(topIndex, 1)
   }
 
+  deletePizza(index) {
+    _state.pizzas.splice(index, 1)
+  }
+
   get Pizza() {
     return _state.pizzas.map(pizza => new Pizza(pizza))
   }

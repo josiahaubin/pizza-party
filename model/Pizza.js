@@ -18,7 +18,9 @@ export default class Pizza {
           <label for="toppings">Toppings</label>
           <input type="text" class="form-control" id="toppings" placeholder="Enter topping">
         </div>
-      </form>
+        <button type="submit">+</button>
+        </form>
+        <button onclick="app.controllers.pizzaController.deletePizza(${index})">X</button>
       </div>
     `
     return template
