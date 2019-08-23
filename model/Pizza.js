@@ -16,11 +16,11 @@ export default class Pizza {
       <form onsubmit="app.controllers.pizzaController.addToppings(event, ${index})">
         <div class="form-group">
           <label for="toppings">Toppings</label>
-          <input type="text" class="form-control" id="toppings" placeholder="Enter topping">
+          <input type="text" class="form-control" id="toppings" placeholder="Enter topping" required>
         </div>
         <button type="submit">+</button>
         </form>
-        <button onclick="app.controllers.pizzaController.deletePizza(${index})">X</button>
+        <button type="button" onclick="app.controllers.pizzaController.deletePizza(${index})">X</button>
       </div>
     `
     return template
