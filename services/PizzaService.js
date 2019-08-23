@@ -5,11 +5,16 @@ let _state = {
 }
 
 export default class PizzaService {
+  constructor() {
+    //console.log("ps")
+  }
+
   createPizza(newPizza) {
     _state.pizzas.push(new Pizza(newPizza))
   }
-  constructor() {
-    //console.log("ps")
+
+  addToppings(newTopping, index) {
+    _state.pizzas[index].toppings.push(newTopping)
   }
 
   get Pizza() {
